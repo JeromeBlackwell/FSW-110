@@ -1,4 +1,4 @@
-for (let i = 0; i < 10; i ++) {
+for (let i = 0; i < 10; i ++) {   
     const ele = document.createElement("h1");
     ele.innerHTML = "Hello World";
     document.body.append(ele);

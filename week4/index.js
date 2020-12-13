@@ -23,7 +23,7 @@ h1.addEventListener("mouseup", function(){
     h1.style.backgroundColor = "yellow";
 });
 
-h1.addEventListener("dbclick", function(){
+h1.addEventListener("dblclick", function(){
     h1.style.backgroundColor = "green";
 });
 

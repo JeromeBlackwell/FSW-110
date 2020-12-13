@@ -6,8 +6,8 @@ h1.style.fontweight = "lighter";
 h1.style.fontfamily = "sans-serif";
 h1.style.color = "cornflowerblue";
 
-var h2 = document.createElement("h2")
-h2.innterHTML = "";
+var h2 = document.createElement("div")
+h2.innterHTML = "Welcome";
 document.body.append(h2);
 h2.style.padding = "100px";
 h2.style.border = "8px solid black";
@@ -27,12 +27,15 @@ h2.addEventListener("mouseup", function(){
 });
 
 h2.addEventListener("dblclick", function(){
+
     h2.style.backgroundColor = "green";
 });
 
-h2.addEventListener("scroll", function(){
+document.addEventListener("scroll", function(){
+console.log("Hello")  
     h2.style.backgroundColor = "orange";
 });
+
 
 window.addEventListener("keydown", event => {
     if (event.key == "r"){

@@ -8,7 +8,7 @@ h1.style.color = "cornflowerblue";
 h1.style.textalign = "center";
 h1.style.padding = "100px";
 h1.style.border = "8px solid black";
-h1.style.height = "300px;";
+h1.style.height = "300px";
 h1.style.width = "250px";
 
 h1.addEventListener("mouseover", function(){

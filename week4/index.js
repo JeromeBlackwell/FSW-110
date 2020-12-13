@@ -1,15 +1,15 @@
-var h1 = document.createElement("h1")
-h1.innterHTML = "";
-document.body.append(h1);
-h1.style.fontsize = "40px";
-h1.style.fontweight = "lighter";
-h1.style.fontfamily = "sans-serif";
-h1.style.color = "cornflowerblue";
-h1.style.textalign = "center";
-h1.style.padding = "100px";
-h1.style.border = "8px solid black";
-h1.style.height = "300px";
-h1.style.width = "250px";
+    var h1 = document.createElement("h1")
+    h1.innterHTML = "";
+    document.body.append(h1);
+    h1.style.fontsize = "40px";
+    h1.style.fontweight = "lighter";
+    h1.style.fontfamily = "sans-serif";
+    h1.style.color = "cornflowerblue";
+    h1.style.textalign = "center";
+    h1.style.padding = "100px";
+    h1.style.border = "8px solid black";
+    h1.style.height = "300px";
+    h1.style.width = "250px";
 
 h1.addEventListener("mouseover", function(){
     h1.style.backgroundColor = "blue";

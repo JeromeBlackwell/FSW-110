@@ -1,8 +1,16 @@
+const myform = document.myform
+
 function add(){
-    c=parseInt(myform.c.value);
-    d=parseInt(myform.d.value);
-    result=c+d;
-    myform.result.value=result;
+    let fst = document.getElementById("fst").value
+    let snd = document.getElementById("snd").value
+let c=parseInt(fst);
+let d=parseInt(snd);
+let result=c+d;
+document.getElementById("print").value =result
+
+
+console.log (result)
+    // myform.result.value=result;
 }
 function subtract(){
     a=parseInt(myform.a.value);

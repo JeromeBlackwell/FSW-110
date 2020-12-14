@@ -1,47 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href ="styles.css">
-        <title>FSW-110 Project 2 Build a Calculator with HTML and JS</title>
-    </head>
-        <body>
-            <form name = "myform" id ="myform">
-                value 1: <input type="text" id="fst" name ="fst"><br><br>
-                value 2: <input type="text" id= "snd" name ="snd"><br><br>
-                operator:
-                <input type="button" name=""value="add" onclick="add()"><br>
-                <button type="button" onclick="add()">calculate</button>
-                
-                <input type="text" id="print" name="result" value="Hello">
-            </form>
-
-            <form id="myform1">
-                value 1: <input type="text" name ="a"><br><br>
-                value 2: <input type="text" name ="b"><br><br>
-                operator:
-                <input type="button" name=""value="subtract" onclick="subtract()"><br>
-                <button type="button" onclick="subtract()">calculate</button>
-                <input type="text" name="result">
-            </form>
-
-            <form id="myform2">
-                value 1: <input type="text" name ="c"><br><br>
-                value 2: <input type="text" name ="d"><br><br>
-                operator:
-                <input type="button" name=""value="multiply" onclick="multiply()"><br>
-                <button type="button" onclick="multiply()">calculate</button>
-                <input type="text" name="result">
-            </form>
-
-            <form id="myform3">
-                value 1: <input type="text" name ="e"><br><br>
-                value 2: <input type="text" name ="f"><br><br>
-                operator:
-                <input type="button" name=""value="divide" onclick="divide()"><br>
-                <button type="button" onclick="divide()">calculate</button>
-                <input type="text" name="result">
-            </form>
-            <script src="project2.js"></script>
-        
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>FSW110 -DOM Week4 Project 2Calculator</title>
+            <link href="styles.css" rel="stylesheet">
+            <script src="calculator.js" defer></script>
+        </head>
+            <body>
+                <h1>Baltimore Raven's Calculator</h1>
+        <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+    </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+    </div>
         </body>
 </html>

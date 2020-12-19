@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Other HTML Forms
+        </title>
+        <script src ="index.js"> </script>
+    </head>
+    <body>
+        <form name= "PassengerPlans">
+            <div>
+                <label for="input-first">First:</label>
+                <input type="text" id="input-first" autofocus placeholder="First Name" tabindex="1"/>
+            </div>
+            <div>
+                <label for="input-first">Last:</label>
+                <input type="text" id="input-first" autofocus placeholder="Last Name" tabindex="1"/>
+            </div>
+            <div>
+                <label for="input-first">Age:</label>
+                <input type= "number" name="Age" autofocus placeholder="Age" tabeindex="1"></input>
+            </div>
+            <div>
+                <label for ="input-first"> Gender: </label>
+                Male <input value="female" type="radio" name="gender"/>
+                Female <input value="male" type="radio" name="gender"/> 
+            </div>
+            <div>
+               <label><input type="checkbox"/> Sahara </label>
+               <br>
+               <label><input type="checkbox"/> Antartica </label>
+               <br>
+               <label><input type="checkbox"/> Kentucky </label>
+            </div>
+            <div>
+                <h3> Dietary Restrictions </h3>
+                <br>
+                <label><input type="checkbox"/> Gluten Free </label>
+                <label><input type="checkbox"/> Kosher </label>
+                <label><input type="checkbox"/> Vegetarian </label>
+            </div>
+            <div class="form-box">
+                <button id="button-cancel">Cancel</button>
+                <button id="button-send">Send</button>
+            </div>
+        </form>
+    </body>
+</html>

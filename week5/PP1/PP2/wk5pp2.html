@@ -1,49 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            DOM WEEK5 P&P Using Other TYPES OF HTML INPUT
-        </title>
-    </head>
-        <body>
-            <h1>AvatarAirlines PreCheck Here!</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DOM WEEK5 P&P Using Other TYPES OF HTML INPUT
+    </title>
+</head>
+    <body>
+        <h1>AvatarAirlines PreCheck Here!</h1>
+    <p>Please fill out the PreCheck information below.</p>
+        <form id= "AvatarAirlines PreCheck">
+        <div>
+            <label for="input-first">First:</label>
+            <input type="text" id="input-firstName" autofocus placeholder="First Name" tabindex="1"/>
+        </div>
+        <div>
+            <label for="input-first">Last:</label>
+            <input type="text" id="input-lastName" autofocus placeholder="Last Name" tabindex="1"/>
+        </div>
+        <div>
+            <label for="input-first">Age:</label>
+            <input type= "number" id="Age" autofocus placeholder="Age" tabeindex="1"></input>
+        </div>
+        <div>
+            <label for ="input-first"> <b>Gender:</b></label>
+            Male <input value="female" type="radio" name="gender"/>
+            Female <input value="male" type="radio" name="gender"/> 
+        </div>
+        <div>
+            <label for ="input-first"> <b>Destination:</b></label>
+            <select id="Destination">
+                <option value="Dubai">Dubai</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Boka">Boka</option>
+            </select>
+        </div>
+        <div>
+            <h3> Dietary Restrictions </h3>
+            <label><input type="checkbox" value="none" id ="none"/> None </label>
+            <label><input type="checkbox" value="gluten free" id ="gluten free"/> Gluten Free </label>
+            <label><input type="checkbox" value="kosher" id ="kosher"/> Kosher </label>
+            <label><input type="checkbox" value="vegan" id ="vegan"/> Vegetarian </label>
+        </div>
+        <div class="form-box">
+            <button type="button" id="submit">Submit</button>
+            <p>Thank you for flying AvatarAirLines!</p>
+        </div>
+    </form>
     <script src ="index.js"> </script>
-        <form name= "AvatarAirlines PreCheck">
-            <div>
-                <label for="input-first">First:</label>
-                <input type="text" id="input-first" autofocus placeholder="First Name" tabindex="1"/>
-            </div>
-            <div>
-                <label for="input-first">Last:</label>
-                <input type="text" id="input-first" autofocus placeholder="Last Name" tabindex="1"/>
-            </div>
-            <div>
-                <label for="input-first">Age:</label>
-                <input type= "number" name="Age" autofocus placeholder="Age" tabeindex="1"></input>
-            </div>
-            <div>
-                <label for ="input-first"> Gender: </label>
-                Male <input value="female" type="radio" name="gender"/>
-                Female <input value="male" type="radio" name="gender"/> 
-            </div>
-            <div>
-               <label><input type="checkbox"/> Dubai </label>
-               <br>
-               <label><input type="checkbox"/> Fiji </label>
-               <br>
-               <label><input type="checkbox"/> Boka </label>
-            </div>
-            <div>
-                <h3> Dietary Restrictions </h3>
-                <label><input type="checkbox"/> None </label>
-                <label><input type="checkbox"/> Gluten Free </label>
-                <label><input type="checkbox"/> Kosher </label>
-                <label><input type="checkbox"/> Vegetarian </label>
-            </div>
-            <div class="form-box">
-                <button id="button-cancel">Cancel</button>
-                <button id="button-send">Send</button>
-            </div>
-        </form>
-    </body>
+</body>
 </html>

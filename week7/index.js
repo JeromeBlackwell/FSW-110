@@ -1,6 +1,6 @@
 const nodelist = document.getElementsByTagName("LI");
-const i;
-for (i = 0; i < nodelist.length; i++) {
+
+for (let i = 0; i < nodelist.length; i++) {
   const span = document.createElement("SPAN");
   const txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -9,8 +9,8 @@ for (i = 0; i < nodelist.length; i++) {
 }
 
 const close = document.getElementsByClassName("close");
-const i;
-for (i = 0; i < close.length; i++) {
+
+for (let i = 0; i < close.length; i++) {
   close[i].onclick = function() {                                                                                                                                                                                                                                                                                                                                                                                                     
     const div = this.parentElement;
     div.style.display = "none";
